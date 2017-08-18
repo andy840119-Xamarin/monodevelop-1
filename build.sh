@@ -13,6 +13,8 @@ if [ "$1" = "checkout" ]; then
 	cd ../..
     rake -f release-scripts/wrench/monodevelop/Rakefile checkout
     rm -rf release-scripts
+elif [ "$1" = "verify-codesign" ]; then
+	ruby release-scripts/verify-codesign.rb package
 else
 	cd .. && mv s monodevelop && cd monodevelop
     make $1
