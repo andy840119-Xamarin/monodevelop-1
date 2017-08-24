@@ -50,7 +50,7 @@ namespace MonoDevelop.Xml.Editor
 			
 			showSchemaAnnotation = properties.Get<bool> (ShowSchemaAnnotationPropertyName, false);
 			autoCompleteElements = properties.Get<bool> (AutoCompleteElementsPropertyName, false);
-			autoInsertFragments = properties.Get<bool> (AutoInsertFragmentsPropertyName, false);
+			autoInsertFragments = properties.Get<bool> (AutoInsertFragmentsPropertyName, true);
 		}
 
  		static void HandlePropertiesPropertyChanged (object sender, PropertyChangedEventArgs e)
